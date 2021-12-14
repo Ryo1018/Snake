@@ -16,5 +16,25 @@ namespace Snake
         {
             InitializeComponent();
         }
+
+        private void KeyIsDown(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void KeyIsUp(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void StartGame(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TakeSnapShot(object sender, EventArgs e)
+        {
+
+        }
     }
 }

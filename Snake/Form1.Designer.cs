@@ -49,6 +49,7 @@ namespace Snake
             this.startButton.TabIndex = 0;
             this.startButton.Text = "START";
             this.startButton.UseVisualStyleBackColor = false;
+            this.startButton.Click += new System.EventHandler(this.StartGame);
             // 
             // snapButton
             // 
@@ -60,6 +61,7 @@ namespace Snake
             this.snapButton.TabIndex = 1;
             this.snapButton.Text = "SNAP";
             this.snapButton.UseVisualStyleBackColor = false;
+            this.snapButton.Click += new System.EventHandler(this.TakeSnapShot);
             // 
             // picCanvas
             // 
@@ -106,6 +108,8 @@ namespace Snake
             this.Controls.Add(this.startButton);
             this.Name = "Form1";
             this.Text = "Snakes Game";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyIsDown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyIsUp);
             ((System.ComponentModel.ISupportInitialize)(this.picCanvas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
