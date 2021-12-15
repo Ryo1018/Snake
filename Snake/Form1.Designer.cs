@@ -71,6 +71,7 @@ namespace Snake
             this.picCanvas.Size = new System.Drawing.Size(580, 680);
             this.picCanvas.TabIndex = 2;
             this.picCanvas.TabStop = false;
+            this.picCanvas.Paint += new System.Windows.Forms.PaintEventHandler(this.UpdatePictureBoxGraphics);
             // 
             // txtScore
             // 
@@ -95,6 +96,7 @@ namespace Snake
             // gameTimer
             // 
             this.gameTimer.Interval = 40;
+            this.gameTimer.Tick += new System.EventHandler(this.GameTimerEvent);
             // 
             // Form1
             // 
